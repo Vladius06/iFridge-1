@@ -15,6 +15,7 @@
 		357A59011AFFDF3C0094B0AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357A59001AFFDF3C0094B0AC /* Images.xcassets */; };
 		357A59041AFFDF3C0094B0AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357A59021AFFDF3C0094B0AC /* LaunchScreen.xib */; };
 		357A59101AFFDF3D0094B0AC /* iFridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 357A590F1AFFDF3D0094B0AC /* iFridgeTests.m */; };
+		357A591C1B00AC1F0094B0AC /* ViewControllerForFridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 357A591B1B00AC1F0094B0AC /* ViewControllerForFridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		357A59091AFFDF3D0094B0AC /* iFridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		357A590E1AFFDF3D0094B0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		357A590F1AFFDF3D0094B0AC /* iFridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFridgeTests.m; sourceTree = "<group>"; };
+		357A591A1B00AC1F0094B0AC /* ViewControllerForFridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerForFridge.h; sourceTree = "<group>"; };
+		357A591B1B00AC1F0094B0AC /* ViewControllerForFridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerForFridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +88,8 @@
 			children = (
 				357A58F41AFFDF3C0094B0AC /* AppDelegate.h */,
 				357A58F51AFFDF3C0094B0AC /* AppDelegate.m */,
-				357A58FA1AFFDF3C0094B0AC /* ViewController.h */,
-				357A58FB1AFFDF3C0094B0AC /* ViewController.m */,
+				357A591D1B00AC2D0094B0AC /* ForFridgeView */,
+				357A59191B00ABF50094B0AC /* MainPageView */,
 				357A58FD1AFFDF3C0094B0AC /* Main.storyboard */,
 				357A59001AFFDF3C0094B0AC /* Images.xcassets */,
 				357A59021AFFDF3C0094B0AC /* LaunchScreen.xib */,
@@ -120,6 +123,24 @@
 				357A590E1AFFDF3D0094B0AC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		357A59191B00ABF50094B0AC /* MainPageView */ = {
+			isa = PBXGroup;
+			children = (
+				357A58FA1AFFDF3C0094B0AC /* ViewController.h */,
+				357A58FB1AFFDF3C0094B0AC /* ViewController.m */,
+			);
+			name = MainPageView;
+			sourceTree = "<group>";
+		};
+		357A591D1B00AC2D0094B0AC /* ForFridgeView */ = {
+			isa = PBXGroup;
+			children = (
+				357A591A1B00AC1F0094B0AC /* ViewControllerForFridge.h */,
+				357A591B1B00AC1F0094B0AC /* ViewControllerForFridge.m */,
+			);
+			name = ForFridgeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +247,7 @@
 				357A58F31AFFDF3C0094B0AC /* main.m in Sources */,
 				357A58FC1AFFDF3C0094B0AC /* ViewController.m in Sources */,
 				357A58F91AFFDF3C0094B0AC /* iFridge.xcdatamodeld in Sources */,
+				357A591C1B00AC1F0094B0AC /* ViewControllerForFridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

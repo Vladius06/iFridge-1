@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *openRecipes;
+@property (strong, nonatomic) IBOutlet UIButton *openFridge;
 
 
 @end
