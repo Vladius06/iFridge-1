@@ -16,6 +16,14 @@
 		357A59041AFFDF3C0094B0AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357A59021AFFDF3C0094B0AC /* LaunchScreen.xib */; };
 		357A59101AFFDF3D0094B0AC /* iFridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 357A590F1AFFDF3D0094B0AC /* iFridgeTests.m */; };
 		357A591C1B00AC1F0094B0AC /* ViewControllerForFridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 357A591B1B00AC1F0094B0AC /* ViewControllerForFridge.m */; };
+		35A4878C1B01F993008F31F3 /* ModeliFridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35A4878A1B01F993008F31F3 /* ModeliFridge.xcdatamodeld */; };
+		35A4878F1B01FCB6008F31F3 /* Recipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4878E1B01FCB6008F31F3 /* Recipes.m */; };
+		35A487921B01FCB6008F31F3 /* Fridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A487911B01FCB6008F31F3 /* Fridge.m */; };
+		35A487981B023095008F31F3 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35A487931B023095008F31F3 /* image.jpg */; };
+		35A487991B023095008F31F3 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A487941B023095008F31F3 /* note.png */; };
+		35A4879A1B023095008F31F3 /* fridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A487951B023095008F31F3 /* fridge.png */; };
+		35A4879B1B023095008F31F3 /* fridge2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 35A487961B023095008F31F3 /* fridge2.jpg */; };
+		35A4879C1B023095008F31F3 /* door.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A487971B023095008F31F3 /* door.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,16 @@
 		357A590F1AFFDF3D0094B0AC /* iFridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFridgeTests.m; sourceTree = "<group>"; };
 		357A591A1B00AC1F0094B0AC /* ViewControllerForFridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerForFridge.h; sourceTree = "<group>"; };
 		357A591B1B00AC1F0094B0AC /* ViewControllerForFridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerForFridge.m; sourceTree = "<group>"; };
+		35A4878B1B01F993008F31F3 /* ModeliFridge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModeliFridge.xcdatamodel; sourceTree = "<group>"; };
+		35A4878D1B01FCB6008F31F3 /* Recipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipes.h; sourceTree = "<group>"; };
+		35A4878E1B01FCB6008F31F3 /* Recipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipes.m; sourceTree = "<group>"; };
+		35A487901B01FCB6008F31F3 /* Fridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fridge.h; sourceTree = "<group>"; };
+		35A487911B01FCB6008F31F3 /* Fridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fridge.m; sourceTree = "<group>"; };
+		35A487931B023095008F31F3 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		35A487941B023095008F31F3 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		35A487951B023095008F31F3 /* fridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fridge.png; sourceTree = "<group>"; };
+		35A487961B023095008F31F3 /* fridge2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fridge2.jpg; sourceTree = "<group>"; };
+		35A487971B023095008F31F3 /* door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +109,11 @@
 				357A591D1B00AC2D0094B0AC /* ForFridgeView */,
 				357A59191B00ABF50094B0AC /* MainPageView */,
 				357A58FD1AFFDF3C0094B0AC /* Main.storyboard */,
+				35A4878A1B01F993008F31F3 /* ModeliFridge.xcdatamodeld */,
+				35A487901B01FCB6008F31F3 /* Fridge.h */,
+				35A487911B01FCB6008F31F3 /* Fridge.m */,
+				35A4878D1B01FCB6008F31F3 /* Recipes.h */,
+				35A4878E1B01FCB6008F31F3 /* Recipes.m */,
 				357A59001AFFDF3C0094B0AC /* Images.xcassets */,
 				357A59021AFFDF3C0094B0AC /* LaunchScreen.xib */,
 				357A58F71AFFDF3C0094B0AC /* iFridge.xcdatamodeld */,
@@ -102,6 +125,11 @@
 		357A58F01AFFDF3C0094B0AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				35A487931B023095008F31F3 /* image.jpg */,
+				35A487941B023095008F31F3 /* note.png */,
+				35A487951B023095008F31F3 /* fridge.png */,
+				35A487961B023095008F31F3 /* fridge2.jpg */,
+				35A487971B023095008F31F3 /* door.png */,
 				357A58F11AFFDF3C0094B0AC /* Info.plist */,
 				357A58F21AFFDF3C0094B0AC /* main.m */,
 			);
@@ -224,8 +252,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				357A58FF1AFFDF3C0094B0AC /* Main.storyboard in Resources */,
+				35A487991B023095008F31F3 /* note.png in Resources */,
 				357A59041AFFDF3C0094B0AC /* LaunchScreen.xib in Resources */,
 				357A59011AFFDF3C0094B0AC /* Images.xcassets in Resources */,
+				35A4879A1B023095008F31F3 /* fridge.png in Resources */,
+				35A487981B023095008F31F3 /* image.jpg in Resources */,
+				35A4879B1B023095008F31F3 /* fridge2.jpg in Resources */,
+				35A4879C1B023095008F31F3 /* door.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A4878C1B01F993008F31F3 /* ModeliFridge.xcdatamodeld in Sources */,
 				357A58F61AFFDF3C0094B0AC /* AppDelegate.m in Sources */,
+				35A4878F1B01FCB6008F31F3 /* Recipes.m in Sources */,
 				357A58F31AFFDF3C0094B0AC /* main.m in Sources */,
+				35A487921B01FCB6008F31F3 /* Fridge.m in Sources */,
 				357A58FC1AFFDF3C0094B0AC /* ViewController.m in Sources */,
 				357A58F91AFFDF3C0094B0AC /* iFridge.xcdatamodeld in Sources */,
 				357A591C1B00AC1F0094B0AC /* ViewControllerForFridge.m in Sources */,
@@ -438,6 +474,7 @@
 				357A59151AFFDF3D0094B0AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		357A59161AFFDF3D0094B0AC /* Build configuration list for PBXNativeTarget "iFridgeTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +483,7 @@
 				357A59181AFFDF3D0094B0AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -457,6 +495,16 @@
 			);
 			currentVersion = 357A58F81AFFDF3C0094B0AC /* iFridge.xcdatamodel */;
 			path = iFridge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		35A4878A1B01F993008F31F3 /* ModeliFridge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				35A4878B1B01F993008F31F3 /* ModeliFridge.xcdatamodel */,
+			);
+			currentVersion = 35A4878B1B01F993008F31F3 /* ModeliFridge.xcdatamodel */;
+			path = ModeliFridge.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
