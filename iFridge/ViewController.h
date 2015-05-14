@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SDWebImage/SDWebImageDownloader.h>
+#import <SDWebImage/SDWebImageManager.h>
 
 @interface ViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIButton *openRecipes;
-@property (strong, nonatomic) IBOutlet UIButton *openFridge;
 
 
 @end

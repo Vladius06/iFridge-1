@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [[SDWebImageDownloader sharedDownloader]downloadImageWithURL:[NSURL URLWithString:@"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIcWX3a-DhojtwcC6gYIhvJl152QUiNKFVTN2Wl6cpMQYpV8zJyDoWot1G" ] options:SDWebImageDownloaderLowPriority progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+        [self.view setBackgroundColor:[UIColor colorWithPatternImage:image]];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
