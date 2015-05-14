@@ -122,7 +122,7 @@
 				357A58F41AFFDF3C0094B0AC /* AppDelegate.h */,
 				357A58F51AFFDF3C0094B0AC /* AppDelegate.m */,
 				357A591D1B00AC2D0094B0AC /* ForFridgeView */,
-				357A59191B00ABF50094B0AC /* MainPageView */,
+				357A59191B00ABF50094B0AC /* SDWebImage */,
 				357A58FD1AFFDF3C0094B0AC /* Main.storyboard */,
 				35A4878A1B01F993008F31F3 /* ModeliFridge.xcdatamodeld */,
 				35A487901B01FCB6008F31F3 /* Fridge.h */,
@@ -168,13 +168,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		357A59191B00ABF50094B0AC /* MainPageView */ = {
+		357A59191B00ABF50094B0AC /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
 				357A58FA1AFFDF3C0094B0AC /* ViewController.h */,
 				357A58FB1AFFDF3C0094B0AC /* ViewController.m */,
 			);
-			name = MainPageView;
+			name = SDWebImage;
 			sourceTree = "<group>";
 		};
 		357A591D1B00AC2D0094B0AC /* ForFridgeView */ = {
