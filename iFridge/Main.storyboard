@@ -23,6 +23,57 @@
             </objects>
             <point key="canvasLocation" x="-862.5" y="-373.5"/>
         </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Abh-Pj-b1l">
+            <objects>
+                <viewController id="GfN-dv-fDj" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rHq-z0-20j"/>
+                        <viewControllerLayoutGuide type="bottom" id="33O-9b-WIz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RQq-Th-7iE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OperationFood.png" translatesAutoresizingMaskIntoConstraints="NO" id="YpO-rF-qfW">
+                                <rect key="frame" x="79" y="259" width="216" height="388"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pq-83-9RR">
+                                <rect key="frame" x="205" y="147" width="154" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButton:" destination="GfN-dv-fDj" eventType="touchUpInside" id="mMk-aP-603"/>
+                                    <segue destination="LMa-eT-kqI" kind="push" id="r9f-D3-hBv"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGG-sm-Rr1">
+                                <rect key="frame" x="205" y="94" width="159" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of the food you are looking for:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTT-Yc-aKc">
+                                <rect key="frame" x="16" y="72" width="181" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sAQ-ny-PJl"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="searchTextField" destination="HGG-sm-Rr1" id="1UG-gG-Xs6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N43-eS-79P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14.5" y="-2524.5"/>
+        </scene>
         <!--Recipes Table View Controller-->
         <scene sceneID="xTM-nS-cJI">
             <objects>
@@ -423,15 +474,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="LMa-eT-kqI" kind="relationship" relationship="rootViewController" id="5g6-Ys-cIA"/>
+                        <segue destination="GfN-dv-fDj" kind="relationship" relationship="rootViewController" id="BnC-I4-lrh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYM-oz-AIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="-2370"/>
+            <point key="canvasLocation" x="-850" y="-2369"/>
         </scene>
     </scenes>
     <resources>
+        <image name="OperationFood.png" width="200" height="318"/>
         <image name="fridge2.jpg" width="1800" height="2288"/>
         <image name="image.jpg" width="2560" height="1577"/>
         <image name="note.png" width="640" height="392"/>

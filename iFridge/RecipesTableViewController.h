@@ -12,7 +12,7 @@
 
 
 @interface RecipesTableViewController : UITableViewController
-
+@property (strong, nonatomic) NSString *myLink;
 @property (strong, nonatomic) NSDictionary *allRecipes;
 @property (strong, nonatomic) NSMutableArray *recipes;
 @property (strong, nonatomic) NSMutableDictionary *name;
