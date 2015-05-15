@@ -87,12 +87,28 @@
     //        //NSLog(@"JSON: %@", self.regions);
 
     cell.nameOfDish.text = self.recipes[indexPath.row][@"recipe"][@"label"];
+    
     cell.cookingLevel.text = self.recipes[indexPath.row][@"recipe"][@"level"];
-    cell.cookingTime.text = [NSString stringWithFormat:@"%@", self.recipes[indexPath.row][@"recipe"][@"cookingTime"]];
-//    cell.caloriesTotal.text = self.recipes[indexPath.row][@"recipe"][@"label"];
+    
+    cell.cookingTime.text = [NSString stringWithFormat:@"cookingTime: %@", self.recipes[indexPath.row][@"recipe"][@"cookingTime"]];
+    
+    double str1 = [self.recipes[indexPath.row][@"recipe"][@"calories"] doubleValue];
+    NSString *caloriesTotal = [NSString stringWithFormat:@"calories: %2.3f", str1];
+    cell.caloriesTotal.text = [NSString stringWithString:caloriesTotal];
+    
+    double str4 = [self.recipes[indexPath.row][@"recipe"][@"totalNutrients"][@"SUGAR"][@"quantity"] doubleValue];
+    NSString *sugarsTotal = [NSString stringWithFormat:@"sugar: %2.3f", str4];
+    cell.sugarsTotal.text = [NSString stringWithString:sugarsTotal];
 //    cell.sugarsTotal.text = self.recipes[indexPath.row][@"recipe"][@"label"];
-//    cell.weightTotal.text = self.recipes[indexPath.row][@"recipe"][@"label"];
-//    cell.fatTotal.text = self.recipes[indexPath.row][@"recipe"][@"label"];
+    
+    double str3 = [self.recipes[indexPath.row][@"recipe"][@"totalWeight"] doubleValue];
+    NSString *weightTotal = [NSString stringWithFormat:@"weight: %2.3f", str3];
+    cell.weightTotal.text = [NSString stringWithString:weightTotal];
+
+    
+    double str2 = [self.recipes[indexPath.row][@"recipe"][@"totalNutrients"][@"FAT"][@"quantity"] doubleValue];
+    NSString *fatTotal = [NSString stringWithFormat:@"fat: %2.3f", str2];
+    cell.fatTotal.text = [NSString stringWithString:fatTotal];
     
     return cell;
 }
