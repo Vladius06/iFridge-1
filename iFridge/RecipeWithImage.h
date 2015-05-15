@@ -7,7 +7,13 @@
 //
 
 #import "ViewController.h"
+#import <SDWebImage/SDWebImageDownloader.h>
+#import <SDWebImage/SDWebImageManager.h>
 
 @interface RecipeWithImage : ViewController
+@property (strong, nonatomic) IBOutlet UIImageView *imageForDish;
+@property (strong, nonatomic) IBOutlet UITextView *textViewForRecipe;
+@property (strong, nonatomic) NSString * imageLink;
+@property (strong, nonatomic) NSMutableDictionary * ingredientsLines;
 
 @end

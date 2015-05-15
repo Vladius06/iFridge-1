@@ -8,6 +8,7 @@
 
 #import "RecipesTableViewController.h"
 #import "TableViewCellRecipes.h"
+#import "RecipeWithImage.h"
 
 
 @interface RecipesTableViewController ()
@@ -71,20 +72,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     RecipesCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell" forIndexPath:indexPath];
-    //        self.name = self.allRecipes[@"orgTypes"];
-    //
-    //        self.cookingTime = self.allRecipes[@"currencies"];
-    //
-    //        self.calories = self.allRecipes[@"regions"];
-    //
-    //        self.totalWeight = self.allRecipes[@"cities"];
-    //
-    //        self.fat = self.allRecipes[@"orgTypes"];
-    //
-    //        self.sugars = self.allRecipes[@"currencies"];
-    //
-    //        self.cookingLevel = self.allRecipes[@"regions"];
-    //        //NSLog(@"JSON: %@", self.regions);
+   
 
     cell.nameOfDish.text = self.recipes[indexPath.row][@"recipe"][@"label"];
     
@@ -99,7 +87,7 @@
     double str4 = [self.recipes[indexPath.row][@"recipe"][@"totalNutrients"][@"SUGAR"][@"quantity"] doubleValue];
     NSString *sugarsTotal = [NSString stringWithFormat:@"sugar: %2.3f", str4];
     cell.sugarsTotal.text = [NSString stringWithString:sugarsTotal];
-//    cell.sugarsTotal.text = self.recipes[indexPath.row][@"recipe"][@"label"];
+
     
     double str3 = [self.recipes[indexPath.row][@"recipe"][@"totalWeight"] doubleValue];
     NSString *weightTotal = [NSString stringWithFormat:@"weight: %2.3f", str3];
@@ -110,6 +98,20 @@
     cell.fatTotal.text = [NSString stringWithString:fatTotal];
     
     return cell;
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+   
+        RecipesCell *cell = (RecipesCell *)sender;
+        NSIndexPath *path = [self.tableView indexPathForCell:cell];
+        RecipeWithImage *newController = segue.destinationViewController;
+        newController.imageLink = self.recipes[path.row][@"recipe"][@"image"];
+        newController.ingredientsLines = self.recipes[path.row][@"recipe"][@"ingredientLines"];
+   
+    
 }
 
 /*
