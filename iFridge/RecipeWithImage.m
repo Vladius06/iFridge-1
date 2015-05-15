@@ -17,9 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     NSLog(@"JSON: %@", self.imageLink);
-     NSLog(@"JSON: %@", self.ingredientsLines);
-    self.textViewForRecipe.text = [NSString stringWithFormat:@"%@", _ingredientsLines];;
+    NSLog(@"JSON: %@", self.ingredientsLines);
+    
+    self.textViewForRecipe.text = [NSString stringWithFormat:@"%@", _ingredientsLines];
+        [[SDWebImageDownloader sharedDownloader]downloadImageWithURL:[NSURL URLWithString:_imageLink] options:SDWebImageDownloaderLowPriority progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+            [self.imageForDish setBackgroundColor:[UIColor colorWithPatternImage:image]];
+        }];
  
 }
 
