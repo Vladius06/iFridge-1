@@ -105,7 +105,6 @@
     NSString *weightTotal = [NSString stringWithFormat:@"weight: %2.3f", str3];
     cell.weightTotal.text = [NSString stringWithString:weightTotal];
 
-    
     double str2 = [self.recipes[indexPath.row][@"recipe"][@"totalNutrients"][@"FAT"][@"quantity"] doubleValue];
     NSString *fatTotal = [NSString stringWithFormat:@"fat: %2.3f", str2];
     cell.fatTotal.text = [NSString stringWithString:fatTotal];
