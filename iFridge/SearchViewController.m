@@ -100,7 +100,7 @@ static NSString * const kClientID = @"479226462698-nuoqkaoi6c79be4ghh4he3ov05bb1
     UIAlertView *noText = [[UIAlertView alloc] initWithTitle:@"Table is empty because no text was detected!" message:@"Please, enter some text in Search field!" delegate:self cancelButtonTitle:@"Ok!" otherButtonTitles:nil];
     
    if([self.searchTextField.text  isEqual: @""]) [noText show];
-
+    
 }
 
 -(void)refreshInterfaceBasedOnSignIn
@@ -119,10 +119,8 @@ static NSString * const kClientID = @"479226462698-nuoqkaoi6c79be4ghh4he3ov05bb1
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 
-        
         RecipesTableViewController *newController = segue.destinationViewController;
         newController.myLink = [NSString stringWithString: self.searchTextField.text];
-   
 }
 
 @end
