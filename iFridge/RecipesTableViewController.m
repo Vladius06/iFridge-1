@@ -28,24 +28,8 @@
         self.allRecipes = (NSDictionary *) responseObject;
         self.recipes = self.allRecipes[@"hits"];
        NSLog(@"JSON: %@", self.recipes);
-//        self.name = self.allRecipes[@"orgTypes"];
-//        
-//        self.cookingTime = self.allRecipes[@"currencies"];
-//       
-//        self.calories = self.allRecipes[@"regions"];
-//      
-//        self.totalWeight = self.allRecipes[@"cities"];
-//        
-//        self.fat = self.allRecipes[@"orgTypes"];
-//        
-//        self.sugars = self.allRecipes[@"currencies"];
-//        
-//        self.cookingLevel = self.allRecipes[@"regions"];
-//        //NSLog(@"JSON: %@", self.regions);
 
         [self.tableView reloadData];
-        
-        //NSLog(@"JSON: %@", self.post[0][@"address"]);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
