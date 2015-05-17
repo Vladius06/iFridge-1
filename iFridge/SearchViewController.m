@@ -48,15 +48,22 @@ static NSString * const kClientID = @"479226462698-nuoqkaoi6c79be4ghh4he3ov05bb1
     
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     
-    loginButton.frame = CGRectMake(16, 72, loginButton.frame.size.width, loginButton.frame.size.height);
+    loginButton.frame = CGRectMake(34, 611, 306, 46);
     
     [self.view addSubview:loginButton];
+    [signIn trySilentAuthentication];
+
 }
 
 - (void)finishedWithAuth: (GTMOAuth2Authentication *)auth
                    error: (NSError *) error
 {
     NSLog(@"Received error %@ and auth object %@",error, auth);
+    if (error) {
+        // Обработка ошибок
+    } else {
+        [self refreshInterfaceBasedOnSignIn];
+    }
 }
 
 -(void) vkSdkReceivedNewToken:(VKAccessToken*) newToken{
@@ -72,11 +79,39 @@ static NSString * const kClientID = @"479226462698-nuoqkaoi6c79be4ghh4he3ov05bb1
 
 }
 
+- (void)signOut {
+    [[GPPSignIn sharedInstance] signOut];
+}
 
+- (void)disconnect {
+    [[GPPSignIn sharedInstance] disconnect];
+}
+
+- (void)didDisconnectWithError:(NSError *)error {
+    if (error) {
+        NSLog(@"Received error %@", error);
+    } else {
+        // Пользователь вышел и отключился.
+        // Удалим данные пользователя в соответствии с Условиями использования Google+.
+    }
+}
 
 - (IBAction)searchButton:(id)sender {
 
 }
+
+-(void)refreshInterfaceBasedOnSignIn
+{
+    if ([[GPPSignIn sharedInstance] authentication]) {
+        // Пользователь вошел.
+        self.signInButton.hidden = YES;
+        // Прочие действия, например отображение кнопки выхода
+    } else {
+        self.signInButton.hidden = NO;
+        // Прочие действия
+    }
+}
+
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
