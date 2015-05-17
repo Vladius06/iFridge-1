@@ -13,6 +13,7 @@
 
 @class GPPSignInButton;
 
+
 @interface SearchViewController : UIViewController <VKSdkDelegate, VKApiObject, GPPSignInDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *searchTextField;
