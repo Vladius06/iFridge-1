@@ -7,6 +7,8 @@
 //
 
 #import "SearchViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface SearchViewController ()
 
@@ -16,6 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    
+    loginButton.frame = CGRectMake(16, 72, loginButton.frame.size.width, loginButton.frame.size.height);
+    
+    [self.view addSubview:loginButton];
+    
 
 }
 
