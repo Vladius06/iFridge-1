@@ -9,6 +9,11 @@
 #import "SearchViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "VKSdk.h"
+
+static NSString *const vkAppID = @"4921324";
+
+
 
 @interface SearchViewController ()
 
@@ -18,6 +23,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+ 
+    NSArray* vkPermissions = [NSArray arrayWithObjects: @"photos", @"friends", @"wall", @"audio", @"video", @"docs", @"notes", @"pages",
+                        @"status", @"groups", @"messages",nil];
+    
+    
+    [VKSdk initializeWithDelegate:self andAppId:vkAppID ];
+    if ([VKSdk wakeUpSession])
+    {
+       [VKSdk authorize:vkPermissions revokeAccess:YES];
+        
+    }
+    
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     
     loginButton.frame = CGRectMake(16, 72, loginButton.frame.size.width, loginButton.frame.size.height);
@@ -25,6 +43,14 @@
     [self.view addSubview:loginButton];
     
 
+}
+
+-(void) vkSdkReceivedNewToken:(VKAccessToken*) newToken{
+    
+}
+
+-(void) vkSdkUserDeniedAccess:(VKError*) authorizationError {
+    
 }
 
 - (void)didReceiveMemoryWarning {

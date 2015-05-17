@@ -10,7 +10,7 @@
 #import "RecipesTableViewController.h"
 #import "VKSdk.h"
 
-@interface SearchViewController : ViewController
+@interface SearchViewController : ViewController <VKSdkDelegate, VKApiObject>
 @property (strong, nonatomic) IBOutlet UITextField *searchTextField;
 
 - (IBAction)searchButton:(id)sender;
