@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 Alexey Pelekh. All rights reserved.
 //
 
-#import "ViewController.h"
+
 #import "RecipesTableViewController.h"
 #import "VKSdk.h"
 #import <GooglePlus/GPPSignIn.h>
 
 @class GPPSignInButton;
 
-@interface SearchViewController : ViewController <VKSdkDelegate, VKApiObject, GPPSignInDelegate>
+@interface SearchViewController : UIViewController <VKSdkDelegate, VKApiObject, GPPSignInDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *searchTextField;
 @property (retain, nonatomic) IBOutlet GPPSignInButton *signInButton;

@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Alexey Pelekh. All rights reserved.
 //
 
-#import "ViewController.h"
+
 #import <SDWebImage/SDWebImageDownloader.h>
 #import <SDWebImage/SDWebImageManager.h>
 
-@interface RecipeWithImage : ViewController
+@interface RecipeWithImage : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *imageForDish;
 @property (strong, nonatomic) IBOutlet UITextView *textViewForRecipe;
 @property (strong, nonatomic) NSString * imageLink;

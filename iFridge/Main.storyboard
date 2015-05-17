@@ -4,25 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-862.5" y="-373.5"/>
-        </scene>
         <!--Search View Controller-->
         <scene sceneID="Abh-Pj-b1l">
             <objects>
@@ -77,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N43-eS-79P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14.5" y="-2524.5"/>
+            <point key="canvasLocation" x="-389.5" y="-2377.5"/>
         </scene>
         <!--Recipes Table View Controller-->
         <scene sceneID="xTM-nS-cJI">
@@ -163,7 +144,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6x6-4m-JOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734.5" y="-2369.5"/>
+            <point key="canvasLocation" x="115.5" y="-2377.5"/>
         </scene>
         <!--Recipe With Image-->
         <scene sceneID="kOa-gB-sGC">
@@ -199,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7d-bl-guy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1283.5" y="-2369.5"/>
+            <point key="canvasLocation" x="595.5" y="-2377.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cxl-QH-2nC">
@@ -466,13 +447,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueO-hE-WTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="437" y="-1481"/>
+            <point key="canvasLocation" x="507" y="-1481"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wf9-e6-weB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h2X-tC-U0S" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sgy-ta-u6i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -484,7 +466,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYM-oz-AIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-850" y="-2369"/>
+            <point key="canvasLocation" x="-889.5" y="-2377.5"/>
         </scene>
     </scenes>
     <resources>
@@ -494,7 +476,7 @@
         <image name="note.png" width="640" height="392"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mSP-X9-tDf"/>
         <segue reference="ZGh-9o-8CH"/>
+        <segue reference="mSP-X9-tDf"/>
     </inferredMetricsTieBreakers>
 </document>

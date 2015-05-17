@@ -24,11 +24,9 @@
 		3559BA851B064F6F0040DCB6 /* OperationFood.png in Resources */ = {isa = PBXBuildFile; fileRef = 3559BA841B064F6F0040DCB6 /* OperationFood.png */; };
 		357A58F31AFFDF3C0094B0AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 357A58F21AFFDF3C0094B0AC /* main.m */; };
 		357A58F61AFFDF3C0094B0AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 357A58F51AFFDF3C0094B0AC /* AppDelegate.m */; };
-		357A58FC1AFFDF3C0094B0AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357A58FB1AFFDF3C0094B0AC /* ViewController.m */; };
 		357A59011AFFDF3C0094B0AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357A59001AFFDF3C0094B0AC /* Images.xcassets */; };
 		357A59041AFFDF3C0094B0AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357A59021AFFDF3C0094B0AC /* LaunchScreen.xib */; };
 		357A59101AFFDF3D0094B0AC /* iFridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 357A590F1AFFDF3D0094B0AC /* iFridgeTests.m */; };
-		357A591C1B00AC1F0094B0AC /* ViewControllerForFridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 357A591B1B00AC1F0094B0AC /* ViewControllerForFridge.m */; };
 		359709671B04E9D3005064C0 /* RecipesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359709661B04E9D3005064C0 /* RecipesTableViewController.m */; };
 		3597096F1B04FD98005064C0 /* RecipesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3597096E1B04FD98005064C0 /* RecipesCell.m */; };
 		35A4878C1B01F993008F31F3 /* ModeliFridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35A4878A1B01F993008F31F3 /* ModeliFridge.xcdatamodeld */; };
@@ -81,15 +79,11 @@
 		357A58F21AFFDF3C0094B0AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		357A58F41AFFDF3C0094B0AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		357A58F51AFFDF3C0094B0AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		357A58FA1AFFDF3C0094B0AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		357A58FB1AFFDF3C0094B0AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		357A59001AFFDF3C0094B0AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		357A59031AFFDF3C0094B0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		357A59091AFFDF3D0094B0AC /* iFridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		357A590E1AFFDF3D0094B0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		357A590F1AFFDF3D0094B0AC /* iFridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFridgeTests.m; sourceTree = "<group>"; };
-		357A591A1B00AC1F0094B0AC /* ViewControllerForFridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerForFridge.h; sourceTree = "<group>"; };
-		357A591B1B00AC1F0094B0AC /* ViewControllerForFridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerForFridge.m; sourceTree = "<group>"; };
 		359709651B04E9D3005064C0 /* RecipesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesTableViewController.h; sourceTree = "<group>"; };
 		359709661B04E9D3005064C0 /* RecipesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesTableViewController.m; sourceTree = "<group>"; };
 		3597096D1B04FD98005064C0 /* RecipesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesCell.h; sourceTree = "<group>"; };
@@ -216,8 +210,6 @@
 				3559BA7E1B0636DE0040DCB6 /* Main.storyboard */,
 				3559BA831B064EB80040DCB6 /* Search */,
 				35A8704C1B061CE8006343B5 /* RecipeWithImage */,
-				357A591D1B00AC2D0094B0AC /* ForFridgeView */,
-				357A59191B00ABF50094B0AC /* SDWebImage */,
 				359709681B04E9E4005064C0 /* Recipes */,
 				359709691B04E9F8005064C0 /* DB */,
 				357A59001AFFDF3C0094B0AC /* Images.xcassets */,
@@ -257,24 +249,6 @@
 				357A590E1AFFDF3D0094B0AC /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		357A59191B00ABF50094B0AC /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				357A58FA1AFFDF3C0094B0AC /* ViewController.h */,
-				357A58FB1AFFDF3C0094B0AC /* ViewController.m */,
-			);
-			name = SDWebImage;
-			sourceTree = "<group>";
-		};
-		357A591D1B00AC2D0094B0AC /* ForFridgeView */ = {
-			isa = PBXGroup;
-			children = (
-				357A591A1B00AC1F0094B0AC /* ViewControllerForFridge.h */,
-				357A591B1B00AC1F0094B0AC /* ViewControllerForFridge.m */,
-			);
-			name = ForFridgeView;
 			sourceTree = "<group>";
 		};
 		359709681B04E9E4005064C0 /* Recipes */ = {
@@ -469,8 +443,6 @@
 				357A58F31AFFDF3C0094B0AC /* main.m in Sources */,
 				35A487921B01FCB6008F31F3 /* Fridge.m in Sources */,
 				3559BA821B064EB30040DCB6 /* SearchViewController.m in Sources */,
-				357A58FC1AFFDF3C0094B0AC /* ViewController.m in Sources */,
-				357A591C1B00AC1F0094B0AC /* ViewControllerForFridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
