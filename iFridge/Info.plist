@@ -30,6 +30,16 @@
 				<string>fb1443953245900020</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>PelekhSoftware.iFridge</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>PelekhSoftware.iFridge</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>

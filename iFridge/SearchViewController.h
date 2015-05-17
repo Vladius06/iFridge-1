@@ -9,9 +9,14 @@
 #import "ViewController.h"
 #import "RecipesTableViewController.h"
 #import "VKSdk.h"
+#import <GooglePlus/GPPSignIn.h>
 
-@interface SearchViewController : ViewController <VKSdkDelegate, VKApiObject>
+@class GPPSignInButton;
+
+@interface SearchViewController : ViewController <VKSdkDelegate, VKApiObject, GPPSignInDelegate>
+
 @property (strong, nonatomic) IBOutlet UITextField *searchTextField;
+@property (retain, nonatomic) IBOutlet GPPSignInButton *signInButton;
 
 - (IBAction)searchButton:(id)sender;
 

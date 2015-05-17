@@ -11,6 +11,20 @@
 		351AFC1D1B08A3B00077C3FC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351AFC1A1B08A3B00077C3FC /* FBSDKLoginKit.framework */; };
 		351AFC1E1B08A3B00077C3FC /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351AFC1B1B08A3B00077C3FC /* FBSDKShareKit.framework */; };
 		35466FB91B08CE9A0016229C /* libPods-VK-ios-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35466FB81B08CE9A0016229C /* libPods-VK-ios-sdk.a */; };
+		354670DC1B08E1150016229C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670DB1B08E1150016229C /* AddressBook.framework */; };
+		354670DE1B08E11D0016229C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670DD1B08E11D0016229C /* AssetsLibrary.framework */; };
+		354670E01B08E1250016229C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670DF1B08E1250016229C /* Foundation.framework */; };
+		354670E51B08E1400016229C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670E11B08E1400016229C /* CoreGraphics.framework */; };
+		354670E61B08E1400016229C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670E21B08E1400016229C /* CoreLocation.framework */; };
+		354670E71B08E1400016229C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670E31B08E1400016229C /* CoreMotion.framework */; };
+		354670E81B08E1400016229C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670E41B08E1400016229C /* CoreText.framework */; };
+		354670EA1B08E14C0016229C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670E91B08E14C0016229C /* MediaPlayer.framework */; };
+		354670EC1B08E1510016229C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670EB1B08E1510016229C /* Security.framework */; };
+		354670EE1B08E15B0016229C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670ED1B08E15B0016229C /* SystemConfiguration.framework */; };
+		354670F01B08E1600016229C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670EF1B08E1600016229C /* UIKit.framework */; };
+		354670F31B08E1A40016229C /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670F11B08E1A30016229C /* GoogleOpenSource.framework */; };
+		354670F41B08E1A40016229C /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670F21B08E1A30016229C /* GooglePlus.framework */; };
+		354670F61B08E1CC0016229C /* GooglePlus.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 354670F51B08E1CC0016229C /* GooglePlus.bundle */; };
 		3559BA7F1B0636DE0040DCB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3559BA7E1B0636DE0040DCB6 /* Main.storyboard */; };
 		3559BA821B064EB30040DCB6 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3559BA811B064EB30040DCB6 /* SearchViewController.m */; };
 		3559BA851B064F6F0040DCB6 /* OperationFood.png in Resources */ = {isa = PBXBuildFile; fileRef = 3559BA841B064F6F0040DCB6 /* OperationFood.png */; };
@@ -50,6 +64,20 @@
 		351AFC1A1B08A3B00077C3FC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		351AFC1B1B08A3B00077C3FC /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		35466FB81B08CE9A0016229C /* libPods-VK-ios-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-VK-ios-sdk.a"; path = "Pods/../build/Debug-iphoneos/libPods-VK-ios-sdk.a"; sourceTree = "<group>"; };
+		354670DB1B08E1150016229C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		354670DD1B08E11D0016229C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		354670DF1B08E1250016229C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		354670E11B08E1400016229C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		354670E21B08E1400016229C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		354670E31B08E1400016229C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		354670E41B08E1400016229C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		354670E91B08E14C0016229C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		354670EB1B08E1510016229C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		354670ED1B08E15B0016229C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		354670EF1B08E1600016229C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		354670F11B08E1A30016229C /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = "../../Downloads/google-plus-ios-sdk-1.7.1/GoogleOpenSource.framework"; sourceTree = "<group>"; };
+		354670F21B08E1A30016229C /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = "../../Downloads/google-plus-ios-sdk-1.7.1/GooglePlus.framework"; sourceTree = "<group>"; };
+		354670F51B08E1CC0016229C /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "../../Downloads/google-plus-ios-sdk-1.7.1/GooglePlus.bundle"; sourceTree = "<group>"; };
 		3559BA7E1B0636DE0040DCB6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3559BA801B064EB30040DCB6 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		3559BA811B064EB30040DCB6 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
@@ -94,6 +122,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354670F61B08E1CC0016229C /* GooglePlus.bundle in Frameworks */,
+				354670F31B08E1A40016229C /* GoogleOpenSource.framework in Frameworks */,
+				354670F41B08E1A40016229C /* GooglePlus.framework in Frameworks */,
+				354670F01B08E1600016229C /* UIKit.framework in Frameworks */,
+				354670EE1B08E15B0016229C /* SystemConfiguration.framework in Frameworks */,
+				354670EC1B08E1510016229C /* Security.framework in Frameworks */,
+				354670EA1B08E14C0016229C /* MediaPlayer.framework in Frameworks */,
+				354670E51B08E1400016229C /* CoreGraphics.framework in Frameworks */,
+				354670E61B08E1400016229C /* CoreLocation.framework in Frameworks */,
+				354670E71B08E1400016229C /* CoreMotion.framework in Frameworks */,
+				354670E81B08E1400016229C /* CoreText.framework in Frameworks */,
+				354670E01B08E1250016229C /* Foundation.framework in Frameworks */,
+				354670DE1B08E11D0016229C /* AssetsLibrary.framework in Frameworks */,
+				354670DC1B08E1150016229C /* AddressBook.framework in Frameworks */,
 				35466FB91B08CE9A0016229C /* libPods-VK-ios-sdk.a in Frameworks */,
 				351AFC1C1B08A3B00077C3FC /* FBSDKCoreKit.framework in Frameworks */,
 				351AFC1D1B08A3B00077C3FC /* FBSDKLoginKit.framework in Frameworks */,
@@ -115,6 +157,20 @@
 		2148CB0A076F4DE6CA217E2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				354670F51B08E1CC0016229C /* GooglePlus.bundle */,
+				354670F11B08E1A30016229C /* GoogleOpenSource.framework */,
+				354670F21B08E1A30016229C /* GooglePlus.framework */,
+				354670EF1B08E1600016229C /* UIKit.framework */,
+				354670ED1B08E15B0016229C /* SystemConfiguration.framework */,
+				354670EB1B08E1510016229C /* Security.framework */,
+				354670E91B08E14C0016229C /* MediaPlayer.framework */,
+				354670E11B08E1400016229C /* CoreGraphics.framework */,
+				354670E21B08E1400016229C /* CoreLocation.framework */,
+				354670E31B08E1400016229C /* CoreMotion.framework */,
+				354670E41B08E1400016229C /* CoreText.framework */,
+				354670DF1B08E1250016229C /* Foundation.framework */,
+				354670DD1B08E11D0016229C /* AssetsLibrary.framework */,
+				354670DB1B08E1150016229C /* AddressBook.framework */,
 				35466FB81B08CE9A0016229C /* libPods-VK-ios-sdk.a */,
 				351AFC191B08A3B00077C3FC /* FBSDKCoreKit.framework */,
 				351AFC1A1B08A3B00077C3FC /* FBSDKLoginKit.framework */,
@@ -532,6 +588,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/alexey.pelekh/Documents/FacebookSDK,
+					"/Users/alexey.pelekh/Downloads/google-plus-ios-sdk-1.7.1",
 				);
 				INFOPLIST_FILE = iFridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -551,6 +608,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/alexey.pelekh/Documents/FacebookSDK,
+					"/Users/alexey.pelekh/Downloads/google-plus-ios-sdk-1.7.1",
 				);
 				INFOPLIST_FILE = iFridge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
