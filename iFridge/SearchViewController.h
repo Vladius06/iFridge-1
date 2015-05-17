@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "RecipesTableViewController.h"
+#import "VKSdk.h"
 
 @interface SearchViewController : ViewController
 @property (strong, nonatomic) IBOutlet UITextField *searchTextField;
